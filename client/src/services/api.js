@@ -3,7 +3,23 @@
  * Centralized API client with automatic JWT token injection and error handling.
  */
 
-const BASE_URL = '/api';
+/**
+ * Determine API base URL:
+ * - In production (e.g. Vercel), import.meta.env.VITE_API_URL is used (e.g. 'https://ledgerflow-jw1r.onrender.com').
+ *   Normalizes trailing slashes and ensures the '/api' prefix is included appropriately.
+ * - In local development (when VITE_API_URL is unset), falls back to '/api'
+ *   to utilize the local Vite dev proxy (target: http://localhost:5000).
+ */
+const getBaseUrl = () => {
+  const envUrl = import.meta.env.VITE_API_URL;
+  if (!envUrl || !envUrl.trim()) {
+    return '/api';
+  }
+  const cleanUrl = envUrl.trim().replace(/\/+$/, '');
+  return cleanUrl.endsWith('/api') ? cleanUrl : `${cleanUrl}/api`;
+};
+
+const BASE_URL = getBaseUrl();
 
 class ApiService {
   getToken() {
@@ -18,8 +34,13 @@ class ApiService {
     }
   }
 
+  getBaseUrl() {
+    return BASE_URL;
+  }
+
   async request(endpoint, options = {}) {
-    const url = `${BASE_URL}${endpoint}`;
+    const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+    const url = `${BASE_URL}${cleanEndpoint}`;
     const token = this.getToken();
 
     const headers = {
