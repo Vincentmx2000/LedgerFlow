@@ -1,0 +1,25 @@
+import express from 'express';
+import {
+  getTransactions,
+  getTransactionById,
+  createTransaction,
+  updateTransaction,
+  deleteTransaction,
+} from '../controllers/transactionController.js';
+import { protect } from '../middleware/authMiddleware.js';
+
+const router = express.Router();
+
+// Guard all transaction routes with JWT authentication
+router.use(protect);
+
+router.route('/')
+  .get(getTransactions)
+  .post(createTransaction);
+
+router.route('/:id')
+  .get(getTransactionById)
+  .put(updateTransaction)
+  .delete(deleteTransaction);
+
+export default router;
