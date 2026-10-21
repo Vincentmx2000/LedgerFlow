@@ -6,10 +6,10 @@
 
 Manage transactions, contacts, shared expenses, savings goals, and upcoming payments in one connected workspace.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_LedgerFlow-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ledger-flow-six.vercel.app/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-View_Repository-181717?style=for-the-badge&logo=github)](https://github.com/Vincentmx2000/LedgerFlow)
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-Try_LedgerFlow-111111?style=for-the-badge&logo=vercel&logoColor=white)](https://ledger-flow-six.vercel.app/)
+[![GitHub Repository](https://img.shields.io/badge/GITHUB-View_Repository-24292f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vincentmx2000/LedgerFlow)
 
-<br/>
+<br>
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?style=flat&logo=vite&logoColor=white)
@@ -21,7 +21,9 @@ Manage transactions, contacts, shared expenses, savings goals, and upcoming paym
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-000000?style=flat&logo=vercel&logoColor=white)
 ![Render](https://img.shields.io/badge/Backend-Render-46E3B7?style=flat&logo=render&logoColor=black)
 
-[Features](#-features) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started) · [API Reference](#-api-overview)
+<br>
+
+[Features](#-features) · [Screenshots](#-screenshots) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started) · [API Overview](#-api-overview)
 
 </div>
 
@@ -29,62 +31,76 @@ Manage transactions, contacts, shared expenses, savings goals, and upcoming paym
 
 ## 📌 About
 
-**LedgerFlow** is a full-stack ledger and money-management application built with the MERN stack. It brings contact management, financial transactions, shared expenses, savings goals, and payment planning into one workspace.
+**LedgerFlow** is a full-stack ledger and money-management application built using the MERN stack. It brings contact management, financial transactions, shared expenses, savings goals, and payment planning together in one connected workspace.
 
-Inspired by business management tools such as Zoho Books and Vyapar, LedgerFlow focuses on keeping financial activities organized and easy to track through a clean, connected interface.
+Inspired by business management platforms such as Zoho Books and Vyapar, LedgerFlow focuses on making financial activities easier to organize, manage, and track through a clean interface.
 
-**Live application:** https://ledger-flow-six.vercel.app/
+**Live application:** [ledger-flow-six.vercel.app](https://ledger-flow-six.vercel.app/)
 
 ## ✨ Features
 
 | Module | Description |
 |---|---|
 | **People Management** | Manage customers, suppliers, staff, vendors, and consultants with search, filters, and custom roles. |
-| **Transactions** | Record financial transactions, payments, receipts, purchases, and expenses with clear inflow and outflow tracking. |
-| **Vault** | Create savings wallets for specific goals, set targets, add funds, and track progress. |
+| **Transactions** | Record financial transactions, payments, receipts, purchases, and expenses with inflow and outflow tracking. |
+| **Vault** | Create savings wallets, set financial targets, add funds, and track progress toward goals. |
 | **Split & Collect** | Divide expenses among multiple people, split amounts equally, validate totals, and track payment status. |
-| **Planner** | Schedule upcoming payments, collections, and expenses; track due dates and completion status. |
+| **Planner** | Schedule upcoming payments, collections, and expenses, and track due dates and completion status. |
 | **Authentication** | Register and sign in using JWT-based authentication. |
-| **Dynamic Roles** | Create custom contact roles and use them in filters and contact forms. |
-| **Responsive Interface** | Navigate the application's modules through a consistent, user-friendly interface. |
+| **Dynamic Roles** | Create custom contact roles and use them in contact forms and directory filters. |
+| **Responsive Interface** | Navigate financial management modules through a consistent interface. |
 
-## 🔗 How the Modules Connect
-
-```mermaid
-flowchart TD
-    People[People Management]
-    Transactions[Transactions]
-    Split[Split & Collect]
-    Planner[Payment Planner]
-    Vault[Vault & Savings Goals]
-
-    People --> Transactions
-    People --> Split
-    People --> Planner
-    Vault --> Goals[Goal Progress Tracking]
-```
-
-Contacts can be associated with transactions, shared expenses, and planned activities. Vaults provide a separate way to track money reserved for specific savings goals.
 
 ## 🖥️ Screenshots
 
-Screenshots can be added to `docs/screenshots/` as the project evolves.
+Explore the LedgerFlow interface below.
 
-| Landing Page | Dashboard |
-|---|---|
-| <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0bdee46b-c9d0-42ad-83f5-45bd1fb13e43" />
- | <img width="1920" height="1080" alt="Screenshot (357)" src="https://github.com/user-attachments/assets/b1bbd0d9-9505-4f93-8419-a436ea313d60" />
- |
+### Landing Page
 
-| People Management | Vault |
-|---|---|
-| <img width="1920" height="1080" alt="Screenshot (356)" src="https://github.com/user-attachments/assets/ca067400-afb2-4420-a30e-8b9cf0abb74e" />
- | <img width="1920" height="1080" alt="Screenshot (353)" src="https://github.com/user-attachments/assets/e2556b59-c737-4331-9203-777668d20d81" />
- |
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/24cdf01a-912b-4756-85f9-277518f2ab9b" alt="LedgerFlow landing page" width="100%">
+</div>
+
+### Dashboard
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8aa1d21d-4560-4b30-9fb0-813650dc4888" alt="LedgerFlow dashboard" width="100%">
+</div>
+
+### Transactions
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/ed73da61-598a-40ca-b19e-214e16c6a0b9" alt="LedgerFlow transactions page" width="100%">
+</div>
+
+### Vault
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/ce5627cd-08d7-43e4-9b8a-776d99cec283" alt="LedgerFlow vault page" width="100%">
+</div>
+
+### Planner
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/d3023e0c-94c3-4fac-8c56-bc5d95e73db1" alt="LedgerFlow planner page" width="100%">
+</div>
+
+### Split & Collect
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/20626a04-6999-4cd6-8053-d6ddaa7f8e35" alt="LedgerFlow split and collect page" width="100%">
+</div>
+
+### People Management
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2374afab-8413-4bce-a339-916760e3805a" alt="LedgerFlow people management page" width="100%">
+</div>
 
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React
 - Vite
 - JavaScript (ES6+)
@@ -93,19 +109,22 @@ Screenshots can be added to `docs/screenshots/` as the project evolves.
 - Lucide icons
 
 ### Backend
+
 - Node.js
 - Express.js
 - REST APIs
 - JWT authentication
 
 ### Database
+
 - MongoDB
 - Mongoose
 
 ### Deployment
+
 - **Frontend:** [Vercel](https://vercel.com/)
 - **Backend:** [Render](https://render.com/)
-- **Database hosting:** MongoDB Atlas, if configured
+- **Database:** MongoDB, with Atlas available for cloud hosting
 
 ## 📂 Project Structure
 
@@ -130,11 +149,9 @@ LedgerFlow/
 └── README.md
 ```
 
-*The directory tree is illustrative; actual files may vary by version.*
-
 ## 🚀 Getting Started
 
-Follow these instructions to run LedgerFlow locally.
+Follow these steps to run LedgerFlow locally.
 
 ### Prerequisites
 
@@ -149,14 +166,14 @@ git clone https://github.com/Vincentmx2000/LedgerFlow.git
 cd LedgerFlow
 ```
 
-### 2. Configure the Backend
+### 2. Set Up the Backend
 
 ```bash
 cd server
 npm install
 ```
 
-Create a `.env` file in the `server/` directory using the project's environment-variable template, if available.
+Create a `.env` file in the `server/` directory. Use the project's environment template if one is available.
 
 Example configuration:
 
@@ -166,17 +183,17 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_private_random_secret
 ```
 
-Use the exact environment-variable names expected by your server code. Never commit real credentials or secrets to GitHub.
+Use the exact variable names required by your backend code. Keep your real credentials private and never commit them to GitHub.
 
-Start the backend using the script defined in `server/package.json`. For example, if a `dev` script exists:
+Start the backend using the development script defined in `server/package.json`. If the project provides a `dev` script, run:
 
 ```bash
 npm run dev
 ```
 
-The backend should be available at `http://localhost:5000` if that is the configured port.
+The backend should be available at `http://localhost:5000` if port `5000` is configured.
 
-### 3. Configure the Frontend
+### 3. Set Up the Frontend
 
 Open a second terminal from the project root:
 
@@ -186,11 +203,11 @@ npm install
 npm run dev
 ```
 
-Vite typically serves the application at:
+Vite typically serves the frontend at:
 
-`http://localhost:5173`
+**http://localhost:5173**
 
-The development proxy forwards `/api` requests to the local backend when configured in `vite.config.js`.
+During local development, the Vite proxy forwards `/api` requests to the backend when configured.
 
 ### 4. Open LedgerFlow
 
@@ -200,23 +217,23 @@ Visit `http://localhost:5173`, create an account if registration is enabled, and
 
 LedgerFlow uses separate hosting for its frontend and backend.
 
-| Component | Platform | URL |
+| Component | Platform | Link |
 |---|---|---|
 | Frontend | Vercel | [Open LedgerFlow](https://ledger-flow-six.vercel.app/) |
 | Backend | Render | [Backend URL](https://ledgerflow-jw1r.onrender.com) |
-| Repository | GitHub | [Source Code](https://github.com/Vincentmx2000/LedgerFlow) |
+| Source Code | GitHub | [View Repository](https://github.com/Vincentmx2000/LedgerFlow) |
 
 ### Production Configuration
 
-- Configure the frontend API URL in Vercel using the environment variable expected by the client, such as `VITE_API_URL`.
+- Set the frontend API URL in Vercel using the environment variable expected by the client, such as `VITE_API_URL`.
 - Configure backend environment variables in Render.
-- Allow the deployed frontend origin in the backend's CORS configuration.
+- Allow the deployed frontend origin in the backend CORS configuration.
 - Configure MongoDB credentials securely in the backend environment.
 - Push changes to the connected GitHub branch to trigger deployments when automatic deployments are enabled.
 
 ## 🔌 API Overview
 
-The following routes describe the main API areas implemented in the project.
+The following table lists the main API areas used by the application.
 
 | Module | Base Route |
 |---|---|
@@ -229,32 +246,32 @@ The following routes describe the main API areas implemented in the project.
 | Planner | `/api/plans` |
 | Health Check | `/api/health` |
 
-Protected routes require the authentication mechanism configured by the backend, typically an `Authorization: Bearer <token>` header for JWT authentication.
+Protected routes require the authentication mechanism configured by the backend. For JWT-protected routes, this typically means sending an `Authorization: Bearer <token>` header.
 
-## 🔒 Security Notes
+## 🔒 Security
 
 - Keep database credentials and authentication secrets out of source control.
 - Use environment variables for production configuration.
-- Configure CORS to allow only the intended frontend origins.
+- Configure CORS to allow only intended frontend origins.
 - Use HTTPS for production requests.
 - Avoid exposing sensitive server errors or authentication details to clients.
 
 ## 🗺️ Future Improvements
 
-Potential areas for future development include:
+Potential enhancements include:
 
 - Financial summaries and visual analytics.
 - Exportable transaction reports.
-- Improved automated testing.
-- Additional accessibility and mobile usability enhancements.
+- Expanded automated testing.
+- Additional accessibility and mobile usability improvements.
 
-These are potential improvements, not claims about existing functionality.
+These are possible future enhancements, not claims that they are already implemented.
 
 ## 👨‍💻 Author
 
 **Vincent** — Full-Stack Developer
 
-[![GitHub](https://img.shields.io/badge/GitHub-Vincentmx2000-181717?style=for-the-badge&logo=github)](https://github.com/Vincentmx2000)
+[![GitHub](https://img.shields.io/badge/GitHub-Vincentmx2000-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vincentmx2000)
 
 ---
 
